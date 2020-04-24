@@ -9,9 +9,24 @@ def key_for_min_value(name_hash)
   
   name_hash.each do |key, value|
     if smallest_value == nil || value < smallest_key
-      value = smallest_key
-      key = smallest_key
+      smallest_value = value 
+      smallest_key = key
     end 
   end 
   smallest_value
 end
+
+
+def key_for_min_value(name_hash)
+  smallest_keys = nil
+  smallest_values = nil
+  
+  name_hash.each do |keys, values|
+  if smallest_values == nil || values < smallest_values
+    smallest_values = values
+    smallest_keys = keys
+  end   
+  end
+smallest_keys
+end 
+© 2020 GitHub, In
